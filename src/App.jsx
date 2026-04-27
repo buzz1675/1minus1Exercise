@@ -20,8 +20,8 @@ function App() {
   return (
     <>
       {loading && <Loader onComplete={() => setLoading(false)} />}
+      <Navigation isReady={!loading} />
       <main className="main-content" id="main-content">
-        <Navigation isReady={!loading} />
         <HeroSection isReady={!loading} />
       </main>
     </>

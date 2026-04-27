@@ -56,7 +56,7 @@ const Navigation = ({ isReady }) => {
   }, [mobileMenuOpen]);
 
   return (
-    <div className={`navigation ${isReady ? "navigation--loaded" : ""}`}>
+    <header className={`navigation ${isReady ? "navigation--loaded" : ""}`}>
       <div className="nav-bg-svg">
         <img src={WaveBackground} alt="Orange Wave Background" />
       </div>
@@ -96,9 +96,7 @@ const Navigation = ({ isReady }) => {
       </nav>
 
       <nav className="navigation__desktop-menu">
-        <div>
-          <img src={BlindSquirrelLogo} alt="Blind Squirrel Games Logo" />
-        </div>
+        <img src={BlindSquirrelLogo} alt="Blind Squirrel Games Logo" />
 
         <div className="navigation__desktop-menu-link-container">
           <NavLinks
@@ -110,7 +108,7 @@ const Navigation = ({ isReady }) => {
           </button>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
